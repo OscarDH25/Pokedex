@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="dd7skgv-dd66933a-5f9f-4152-9f9a-97ee092a6e5f.png" alt="logo pokedex" class="image" />
+      <div class="cont-buscador">
+         <pre>Buscar por Nombre   </pre>  
+        <input type="text" id="pokename" placeholder="Ejemplo: pikachu" />
+        <input type="button" value="buscar" id="buscar">
+      </div>
+      <nav class="nav">
+        
+        <ul class="nav-list">
+          <li class="nav-tipo">
+            <button class="boton-header boton-todos" id="ver-todos">
+              ver todos
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-normal" id="normal">
+              normal
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-fire" id="fire">
+              fire
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-water" id="water">
+              water
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-grass" id="grass">
+              grass
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-electric" id="electric">
+              electric
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-ice" id="ice">ice</button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-fighting" id="fighting">
+              fighting
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-poison" id="poison">
+              poison
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-ground" id="ground">
+              ground
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-flying" id="flying">
+              flying
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-psychic" id="psychic">
+              psychic
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-bug" id="bug">bug</button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-rock" id="rock">
+              rock
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-ghost" id="ghost">
+              ghost
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-dark" id="dark">
+              dark
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-dragon" id="dragon">
+              dragon
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-steel" id="steel">
+              steel
+            </button>
+          </li>
+          <li class="nav-tipo">
+            <button class="boton-header boton-fairy" id="fairy">
+              fairy
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="todos">
+        <div class="pokemon-todos" id="listaPokemon"></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

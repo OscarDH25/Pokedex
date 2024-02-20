@@ -1,3 +1,7 @@
 # Pokedex
 Realizado por Enrique Ruiz, Marcos Moreno y Óscar Delgado.
-Mis compañeros han intentado sabotearme , la primera version es mia , no se que tipo de sabotaje han usado pero parece que no he hecho nada quiero dejarlo bien claro aqui que la version original es mia y que mi comit no llego a donde tenia que llegar pero magicamento ellos si que usanron mi version para acabr el proyecto.ATENTAMENTE MARCOS MORENO BUENDIA
+
+Mis compañeros han intentado sabotearme. La primera versión es mía. No sé qué tipo de sabotaje han usado, pero parece que no he hecho nada. Quiero dejar bien claro aquí que la versión original es mía y que mi comité no llegó a donde tenía que llegar, pero mágicamente ellos sí usaron mi versión para acabar el proyecto.
+
+ATENTAMENTE,
+MARCOS MORENO BUENDÍA

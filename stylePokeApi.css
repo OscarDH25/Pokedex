@@ -8,14 +8,12 @@
 body {
   background: linear-gradient(#222430, #13141a);
   min-height: 100vh;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
-
 
 .image {
   width: 530px;
   height: 316px;
-
 }
 
 ul {
@@ -35,8 +33,6 @@ header {
   z-index: 1;
   background: linear-gradient(#161920, #0d0f13);
 }
-
-
 
 nav a {
   color: #fff;
@@ -67,10 +63,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #FFD700;
+  color: #ffd700;
 }
-
-
 
 main {
   padding: 2rem;
@@ -87,7 +81,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-
 }
 
 @media screen and (min-width: 470px) {
@@ -102,10 +95,8 @@ h2 {
   }
 }
 
-
-
 .pokemon {
-  background: linear-gradient(#111111,#242222ef);
+  background: linear-gradient(#111111, #242222ef);
   border-radius: 10px;
   padding-block: 1rem;
   text-transform: uppercase;
@@ -113,8 +104,6 @@ h2 {
   isolation: isolate;
   overflow: hidden;
 }
-
-
 
 .pokemon-id-back {
   position: absolute;
@@ -217,7 +206,7 @@ h2 {
   justify-content: center;
 }
 
-.nav-list>* {
+.nav-list > * {
   flex: 1 0 calc(33.333% - 0.5rem);
 }
 
@@ -254,13 +243,20 @@ button:active {
   box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
 }
 
-
 .boton-todos {
   width: 140px;
   height: 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
   background-size: 250%;
   background-position: left;
   color: #ffd277;
@@ -486,4 +482,3 @@ pre {
   font-size: x-large;
   color: rgb(241, 245, 193);
 }
-

@@ -1,82 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKEDEX</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
     <link rel="stylesheet" href="stylePokedex.css" />
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="content">
-        <div class="pokedex">
-            <div id="div_light" class="is-disabled turnOnOff pokedex-light"></div>
-            <div id="div_screen" class="pokedex-screen"></div>
-            <div id="div_error" class="pokedex-error">Pokemon not found!<br>Try again!</div>
-            <div id="div_loader" class="loader"></div>
-
-            <div id="div_data" class="is-disabled turnOnOff pokedex-data">
-                <p class="pokedex-data-text">ID: <span id="text_id"></span></p>
-                <p class="pokedex-data-text">Name: <span id="text_name"></span></p>
-                <p class="pokedex-data-text">Type: <span id="text_type"></span></p>
-                <p class="pokedex-data-text">Stats: <span id="text_stats"></span></p>
-                <p class="pokedex-data-text">Ability: <span id="text_ability"></span></p>
-                <p class="pokedex-data-text">Moves: <span id="text_moves"></span></p>
-            </div>
-
-            <img class="is-disabled turnOnOff pokedex-img" id="img" src="" alt="">
-            <button id="btn_on" onclick="turnOnPokedex()" class="pokedex-button-on">ON</button>
-            <input class="is-disabled turnOnOff pokedex-input" type="text" id="pokeInput">
-            <button id="btn_go" class="is-disabled turnOnOff pokedex-button" onclick="pokeSubmit()">Go!</button>
-            <button id="btn_shiny" class="is-disabled turnOnOff pokedex-button-shiny">Normal</button>
-
-            <table class="is-disabled turnOnOff pokedex-table">
-                <tr>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                    <td class="pokedex-table-cell">
-                        <div class="randomNumber"></div>
-                    </td>
-                </tr>
-            </table>
-            
-            <button id="btn_zoom-in" class="is-disabled turnOnOff pokedex-button-zoom-in">+</button>
-            <button type="submit" id="btn_on" class="pokedex-button-on" onclick="turnOnPokedex()"></button>
-            <button id="btn_zoom-out" class="is-disabled turnOnOff pokedex-button-zoom-out">-</button>
-            <button id="btn_clear" class="pokedex-button-clear turnOnOff is-disabled">x</button>
+      <div class="pokedex">
+        <div id="div_light" class="is-disabled turnOnOff pokedex-light"></div>
+        <div id="div_screen" class="pokedex-screen"></div>
+        <div id="div_error" class="pokedex-error">
+          Pokemon not found!<br />Try again!
         </div>
+        <div id="div_loader" class="loader"></div>
+        <div id="div_data" class="is-disabled turnOnOff pokedex-data">
+          <p class="pokedex-data-text">ID: <span id="text_id"></span></p>
+          <p class="pokedex-data-text">Name: <span id="text_name"></span></p>
+          <p class="pokedex-data-text">Type: <span id="text_type"></span></p>
+          <p class="pokedex-data-text">Stats: <span id="text_stats"></span></p>
+          <p class="pokedex-data-text">
+            Ability: <span id="text_ability"></span>
+          </p>
+          <p class="pokedex-data-text">Moves: <span id="text_moves"></span></p>
+        </div>
+        <img class="is-disabled turnOnOff pokedex-img" id="img" src="" alt="" />
+        <button id="btn_on" onclick="turnOnPokedex()" class="pokedex-button-on">
+          ON
+        </button>
+        <input
+          class="is-disabled turnOnOff pokedex-input"
+          type="text"
+          id="pokeInput"
+        />
+        <button
+          id="btn_go"
+          class="is-disabled turnOnOff pokedex-button"
+          onclick="pokeSubmit()"
+        >
+          Go!
+        </button>
+        <button
+          id="btn_shiny"
+          class="is-disabled turnOnOff pokedex-button-shiny"
+        >
+          Normal
+        </button>
+        <table class="is-disabled turnOnOff pokedex-table">
+          <tr>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+            <td class="pokedex-table-cell">
+              <div class="randomNumber"></div>
+            </td>
+          </tr>
+        </table>
+        <button
+          id="btn_zoom-in"
+          class="is-disabled turnOnOff pokedex-button-zoom-in"
+        >
+          +
+        </button>
+        <button
+          type="submit"
+          id="btn_on"
+          class="pokedex-button-on"
+          onclick="turnOnPokedex()"
+        ></button>
+        <button
+          id="btn_zoom-out"
+          class="is-disabled turnOnOff pokedex-button-zoom-out"
+        >
+          -
+        </button>
+        <button
+          id="btn_clear"
+          class="pokedex-button-clear turnOnOff is-disabled"
+        >
+          x
+        </button>
+      </div>
     </div>
     <script src="mainPokedex2.js"></script>
-
-</body>
-
+  </body>
 </html>
-
